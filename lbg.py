@@ -209,8 +209,8 @@ def delete_one(_id):
 # module import protection
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-parser.add_argument("--PORT", default="8080")
-args = parser.parse_args()
+    parser.add_argument("--PORT", default="8080")
+    args = parser.parse_args()
 
 PORT = args.PORT
 HOST = 'localhost'
