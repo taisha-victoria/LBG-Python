@@ -1,5 +1,5 @@
 # REST API starter
-Testing web-hook jenkins
+Testing web-hook  trigger
 
 This application is the start point for Sprint 1 of the Lloyds Bank Group Modern Engineering Bootcamp Project Specification.
 
