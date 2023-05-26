@@ -1,8 +1,6 @@
 FROM Python:3.9
-WORKDIR/app
-RUN apt-get update &&\ apt-get install -y python3-pip &&\
-pip3 install -r requirements.txt
-COPY ./app
-EXPOSE 8000
-ENV ENV_VAR_NAME=value
-ENTRYPOINT ["python", "app.py"]
+RUN pip3 install -r requirements.txt
+COPY . .
+EXPOSE 8080
+ENV lbg.test.py=value
+ENTRYPOINT ["python", "lbg.py"]
