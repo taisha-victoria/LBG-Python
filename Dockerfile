@@ -1,6 +1,6 @@
-FROM Python:3.9
+FROM Python:3.11
+COPY . . 
 RUN pip3 install -r requirements.txt
-COPY lbg.py/app/lbg.py
-EXPOSE 0.0.0.0:8000
+EXPOSE 8000
 ENV lbg.test.py=value
-ENTRYPOINT ["python", "lbg.py"]
+ENTRYPOINT ["python3", "lbg.py", "--PORT"," 8000"]
